@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>fullscreen@mbrubeck.limpet.net</em:id>
+    <em:version>2.0.7</em:version>
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+
+    <em:targetApplication>
+      <!-- Fennec -->
+      <Description>
+        <em:id>{a23983c0-fd0e-11dc-95ff-0800200c9a66}</em:id>
+        <em:minVersion>4.0b4</em:minVersion>
+        <em:maxVersion>10.0.*</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Front End MetaData -->
+    <em:name>Full Screen</em:name>
+    <em:description>Make the browser use the whole screen</em:description>
+    <em:creator>Matt Brubeck</em:creator>
+    <em:iconURL>data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAABFNJREFUWMPNV8tOI0cUPdX1oLvcuBuwjTGYwRYSUhZB2fMDrOIfSDQiyexZ5CcilBWM5EijKFlELCd7/iKRrEiIXcJj5AgbP9r9qiyG8jTtbh6joKSkK8t2V91T955772ngP14EACzL+txxnLecc1BKQQh5FmdKKURRhCAI0Ov1WuPx+FcCAM1mU7muC8uyIISYArgPiFLq3u95e3zfh+d5uL6+xtnZGWEAUKlUUKlUUCwWYZomDMN40s3iOIZS6g4IpdTMRZRSmEwm6Pf7EELg7OwMDABc18Xy8jIWFhZgWRYopQ/njhAopRDHMQaDwd+e542jKCIajF6GYcAwDEgpi0II2/d9WJaFIAgA4D0AKSXm5+eh0/AQD/RtlVIIwxCEEHVwcPACQJS3Z3d397udnZ1vhRAIwxBSyvcAAYBzDiEEOOePMiEE5ubmwBgDpVRRSpf29/evAVh5AIIgYGEYwjAMcM7BGPsAIBnWx1gq/yQIAuX7vt1qtf4AUMoCMBqNMB6PEUUR4jie/s6ymJzF6DyWx3E8La3BYNAF0Mt6zvM8eJ4HSumds1g6p3EcTwn2UEndEk7FcUz6/f6fJycnn+U9H4YhNAGTRGXJw7RlhTodiSiKEIYhJpMJ6Xa7fx0fHzcfA1inQJ9jZDE7zzRA7Xw8HuPi4uK3dru9BsBPO3Vdtw1ApntBsmcYyUaSjEKeRVEE3/fVaDTC+fn570dHR58CmMnX0tLSzwsLC6+2trY6AEzGmEqW950U5EUgq/bDMFSe55HLy8uLW+czq1KptKvV6hdSSpimub6xsXHV6/V+0aV3Lwm1JTmQbDqe55Grq6vL169fv8i6eb1ef1Or1fYWFxdVoVAgQgjFOZ9vNptfc86nbX6GhFmVkCaQ7/vodrvvDg8Pq1k3bzQaP1ar1ZflchmLi4vEtm0wxgilFJxzyjmfOTszBVkAgiDAZDLBzc3Nuyzna2tr7Wq1+rJSqaBcLsNxHJimCUopDMOYVpaeAXdImHae9Zue5YyxT7a3t39IOl9ZWfm+Xq+/0s5d14Vt27AsC5ZlYW5uDlprpMt5pg+kI5AEcAtOra+vfzMcDunp6elXjUbjp1qt9mWpVFKlUok4joNCoQAhxHQSak4lL5dJQg0iXbf6k1IKIQSxbVttbm7ura6u7nHOUSwWleu6xHEcSCnBGMvcn9QNMxFIcyFdgnqKSSkRxzERQsD3fTDGIKUktm1DSgkhxDTUWSIlE4BuRslWnN6oo2KaJgghEEIgjmPcMnw6nnWos1p5Vo+ZSUFWFSQllmEYU2dJ1aO7nH4ur5Gl5RtLhyorBcmlSyqpG9PDK2+c56bgPhI+VRHngX+QhPdxIE+UPiRissRLstxnFNFTXzL+jT0sq9k855tR0tcUQHLWP4YDHxsFLWSSXGNar+k/gyB41IvJx6woiqYWhuEHAJ1Op+W67lvG2LMD8H0fw+EQnU6nhf/D+gdsAMSGiL3awwAAAABJRU5ErkJggg==</em:iconURL>
+  </Description>
+</RDF>
