@@ -43,15 +43,6 @@ Components.utils.import("resource://gre/modules/Services.jsm");
 function load(win) {
   let document = win.document;
 
-  // Create button.
-  let button = document.createElement("toolbarbutton");
-  button.setAttribute("id", "fullscreen-button");
-  button.setAttribute("class", "appmenu-button");
-  button.setAttribute("label", "Full screen");
-
-  let menu = document.getElementById("appmenu");
-  menu.insertBefore(button, menu.firstChild);
-
   function toggle(enable) {
     if (typeof enable != "boolean")
       enable = !win.fullScreen;
@@ -65,16 +56,25 @@ function load(win) {
     button.setAttribute("image", enable ? disableImg : enableImg);
   }
 
-  button.addEventListener("command", toggle, false);
-
   // setTimeout is needed to avoid a crash
   win.setTimeout(function() {
+    // Create button.
+    let button = document.createElement("toolbarbutton");
+    button.setAttribute("id", "fullscreen-button");
+    button.setAttribute("class", "appmenu-button");
+    button.setAttribute("label", "Full screen");
+
+    let menu = document.getElementById("appmenu");
+    menu.insertBefore(button, menu.firstChild);
+
+    button.addEventListener("command", toggle, false);
+
     let active = true;
     try {
       active = Services.prefs.getBoolPref("extensions.fullscreen.active");
     } catch (e) {}
     toggle(active);
-  }, 0);
+  }, 100);
 }
 
 function unload(win) {
